@@ -29,7 +29,7 @@
                     endTime: '$shift->endtime',
                     title: '$this->name',
                     url:'#$shift->ID'
-                }") ;
+                },") ;
             }
             return $events;
         }

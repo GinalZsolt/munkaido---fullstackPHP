@@ -27,7 +27,7 @@
         events:[
             <?php 
                 foreach ($workers as $worker){
-                    echo join($worker->CreateFullCalendarEvent(), ",");
+                    echo join($worker->CreateFullCalendarEvent(), "");
                 }
             ?>
         ],
