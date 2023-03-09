@@ -182,7 +182,7 @@
             </table>';
             if ($param == 'b')
             {
-                $str .= '<a href="index.php?pg='.$this->tablename.'_list" class="btn btn-primary mb-3">Vissza...</a>';
+                $str .= '<a href="index.php?pg='.$this->tablename.'" class="btn btn-primary mb-3">Vissza...</a>';
             }
             echo $str;
         }
