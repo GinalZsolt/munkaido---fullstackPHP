@@ -17,7 +17,21 @@
                 array_push($this->shifts, new Shift($data[$i]["ID"])); 
             }
             $db->__destruct();
-            var_dump($this);
+
+        }
+        public function CreateFullCalendarEvent(){
+            $events = array();
+            foreach ($this->shifts as $shift) {
+                array_push($events, "{
+                    id:'$this->ID $this->name',
+                    daysOfWeek: ['$shift->day'],
+                    startTime: '$shift->starttime',
+                    endTime: '$shift->endtime',
+                    title: '$this->name',
+                    url:'#$shift->ID'
+                }") ;
+            }
+            return $events;
         }
     }
     class Position {
@@ -30,6 +44,7 @@
             $this->ID = $ID;
             $this->name = $data["name"];
             $this->wage = $data["wage"];
+            $db->__destruct();
         }
     }
     class Shift{
@@ -44,6 +59,7 @@
             $this->starttime = $data["starttime"];
             $this->endtime = $data["endtime"];
             $this->day = $data["day"];
+            $db->__destruct();
         }
     }
 
