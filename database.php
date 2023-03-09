@@ -243,14 +243,18 @@
                         <label for="'.$items[1].'">'.$items[2].'</label>
                     </div>'; break;
                     }
-
+                    case 'time':{
+                        $formElements[] = '<div class="form-floating mb-3">
+                        <input type="time" class="form-control" name="'.$items[1].'" placeholder="" value="'.@$_POST[$items[1]].'">
+                        <label for="'.$items[1].'">'.$items[2].'</label>
+                    </div>'; break;
+                    }
                     case 'password': {
                         $formElements[] = '<div class="form-floating mb-3">
                         <input type="password" class="form-control" name="'.$items[1].'" placeholder="" value="'.@$_POST[$items[1]].'">
                         <label for="'.$items[1].'">'.$items[2].'</label>
                     </div>'; break;
                     }
-
                     case 'file' : {
                         $enctype = 'enctype="multipart/form-data"';
                         $formElements[] = '<div class="form-floating mb-3">
