@@ -12,7 +12,7 @@
     <title><?php echo $appname; ?></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/leltar.css">
+    <link rel="stylesheet" href="css/munkaido.css">
 </head>
 <body>
     <div class="container">
