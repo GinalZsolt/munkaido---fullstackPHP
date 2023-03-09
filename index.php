@@ -3,6 +3,8 @@
     require("adatok.php");
     require("database.php");
     $db = new DB($dbhost, $dbname, $dbuser, $dbpass);
+    require("munkaido.php");
+    new Worker(1);
 ?>
 <html lang="hu">
 <head>
