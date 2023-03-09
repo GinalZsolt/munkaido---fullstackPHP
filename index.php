@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-    require("resources.php");
-    require("API/database.php");
+    require("adatok.php");
+    require("database.php");
     $db = new DB($dbhost, $dbname, $dbuser, $dbpass);
 ?>
 <html lang="hu">
