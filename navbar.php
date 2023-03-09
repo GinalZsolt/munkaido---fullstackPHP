@@ -11,6 +11,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?pg=workers">Dolgozók</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?pg=position">Beosztások</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
