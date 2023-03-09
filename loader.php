@@ -5,17 +5,17 @@
         default:{include("munkaidok.php");break;}
         case "workers":{include("dolgozok.php");break;}
 
-        case "delworker":{include("delworker.php");break;}
-        case "delshift":{include("delshift.php");break;}
+        case "workers_del":{include("delworker.php");break;}
+        case "shift_del":{include("delshift.php");break;}
 
-        case "newshift":{include("newshift.php");break;}
-        case "newworker":{include("newworker.php");break;}
+        case "shift_add":{include("newshift.php");break;}
+        case "workers_add":{include("newworker.php");break;}
 
-        case "infoworker":{include("infoworker.php");break;}
-        case "infoshift":{include("infoshift.php");break;}
+        case "workers_info":{include("infoworker.php");break;}
+        case "shift_info":{include("infoshift.php");break;}
 
-        case "modshift":{include("modshift.php");break;}
-        case "modworker":{include("modworker.php");break;}
-        
+        case "shift_mod":{include("modshift.php");break;}
+        case "workers_mod":{include("modworker.php");break;}
+
     }
 ?>
