@@ -9,7 +9,7 @@
                 workers.name as 'Dolgozó neve',
                 starttime as 'Kezdés',
                 endtime as 'Végzés',
-                day as 'Nap'
+                day as 'Hét napja'
                 FROM shifts
                 INNER JOIN workers on workers.ID=workerID");
     $db->toTable('c|i|u|d');
