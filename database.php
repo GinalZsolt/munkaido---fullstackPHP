@@ -225,7 +225,7 @@
 
                     case 'number': {
                         $formElements[] = '<div class="form-floating mb-3">
-                        <input type="number" class="form-control" name="'.$items[1].'" placeholder="" value="'.@$_POST[$items[1]].'">
+                        <input type="number" class="form-control" name="'.$items[1].'" placeholder="" value="'.@$_POST[$items[1]].'"  min="'.$items[3].'" max="'.$items[4].'">
                         <label for="'.$items[1].'">'.$items[2].'</label>
                     </div>'; break;
                     }
