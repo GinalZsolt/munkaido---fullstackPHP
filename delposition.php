@@ -2,7 +2,8 @@
 <hr>
 <?php
     if (isset($_POST['delete'])){
-        $db->exec("UPDATE workers SET positionID = 0 WHERE ID=").$_GET['ID'] ;
+        var_dump("UPDATE workers SET positionID=0 WHERE positionID=".$_GET['ID']);
+        $db->exec("UPDATE workers SET positionID=0 WHERE positionID=".$_GET['ID']) ;
         $db->exec("DELETE FROM position WHERE ID=".$_GET['ID']);
         header("location: index.php");
     }
