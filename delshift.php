@@ -6,7 +6,7 @@
         header("location: index.php");
     }
 
-    $db->autoForm('action|tetelek_del&ID='.$_GET['ID'].'¤
+    $db->autoForm('action|shifts_del&ID='.$_GET['ID'].'¤
     label|Biztosan törlöd az alábbi rekordot?¤
     submit|delete|Igen|danger¤
     a|cancel|Mégsem|secondary');
