@@ -10,7 +10,7 @@
             $wage = escapeshellcmd($_POST['wage']);
            
         
-            if (empty($name) || empty($wage))
+            if (empty($name) || !isset($wage))
             {
                 showMessage('Nem adtál meg minden szükséges adatot!', 'danger');
             }
