@@ -23,7 +23,8 @@
 <script>
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
+        //plugins: [dayGridPlugin],
+        initialView: 'dayGridWeek',
         events:[
             <?php 
                 foreach ($workers as $worker){

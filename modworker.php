@@ -20,7 +20,8 @@
     $db->query("select * from workers where ID=$id");
     $db->autoForm("action|workers_mod&ID=".$id."¤
     text|name|Munkás neve¤
-    submit|submit|Módosítás|warning
+    text|positionID|Pozició azonosító¤
+    submit|submit|Módosítás|warning¤
     ");
 
 
